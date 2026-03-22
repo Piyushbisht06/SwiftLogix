@@ -33,10 +33,10 @@ ul li a{
     height:90vh;
     background:url("images/Home.jpg") center/cover;
     display:flex;
-    justify-content:center;
-    align-items:center;
+    justify-content:;
+    align-items:;
     color:white;
-    text-align:center;
+    text-align:;
 }
 
 .hero h1{
