@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<head>
+        <style>
+     /*  contact Section */
+.contact{
+    text-align:center;
+    padding:50px 20px;
+    margin:0;
+    font-family: Arial;
+    background:#0d1b4c;
+    color:white;
+}
+/* Heading */
+.contact h1{
+    font-size:40px;
+    margin:10px 0;
+}
+/* Info Section */
+.info1{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin:40px 0;
+    color:white;
+}
+
+.info1 div{
+    text-align:center;
+}
+
+.info1 i{
+    font-size:25px;
+    background:#1e2b5c;
+    padding:20px;
+    border-radius:50%;
+    margin-bottom:10px;
+    color:white;
+}
+
+/* Form */
+.form2{
+    width:80%;
+    margin:auto;
+}
+
+.row1{
+    display:flex;
+    gap:20px;
+    margin-bottom:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    background:transparent;
+    border:1px solid #ccc;
+    color:white;
+    font-size:16px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+/* Button */
+button{
+    margin-top:20px;
+    padding:15px 40px;
+    background:#ffb400;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e09c00;
+}
+        </style>
+    </head>
+    
+    <body>
+<!--contact-->
+    <section class="contact">
+             <h1>Get In Touch With Us</h1>
+              <!-- Contact Info -->
+    <div class="info1">
+
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>contact@logistics.com</p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>(00) 112 365 489</p>
+        </div>
+
+        <div>
+            <i class="fa-regular fa-clock"></i>
+            <p>Mon – Sat 9:00 – 18:00<br>Sunday Closed</p>
+            </div>
+    </div>
+        
+<!-- Form -->
+    <form class="form2" action="contact.php" method="POST">
+
+        <div class="row1">
+            <input name="name" type="text" placeholder="Your name*" required>
+            <input name="email" type="email" placeholder="Email*" required>
+        </div>
+
+        <div class="row1">
+            <input name="phone" type="text" placeholder="Phone Number*" required>
+            <input name="city" type="text" placeholder="City*" required>
+        </div>
+
+        <textarea name="message" placeholder="Your Message"></textarea>
+
+        <button type="submit" name="submit">Submit Message</button>
+    </section>
+    </body>
+    </form>
+</html>
