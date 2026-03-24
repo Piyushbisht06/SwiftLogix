@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SwiftLogix</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font -->
+ <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!-- favicon-->
+
+<link rel="icon" href="images/favicon.ico">
+
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.booking-form {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #193165;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.booking-form .row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #adb8c7;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form textarea:focus {
+  border: 1px solid #3b82f6;
+  background: #111827;
+}
+
+.booking-form textarea {
+  resize: none;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+  transform: scale(1.02);
+}
+</style>
+</head>
+<body>
+<!--
+<!-- NAVBAR 
+<nav>
+    <h2 class="logo">SWIFT<span class="logo1">LOGIX</span></h2>
+
+    <ul id="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Services.html">SERVICES</a></li>
+        <li><a href="booking.html">BOOKING</a></li>
+        <li><a href="tracking.html">TRACKING</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li><a href="index.html" class="btn">Sign In</a></li>
+    </ul>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+</nav>-->
+
+<!-- HERO 
+<section class="hero">
+    <div class="hero-text">
+        <h1>FAST & RELIABLE SERVICES</h1>
+        <p>Book trucks, track shipments and manage deliveries easily.</p>
+    </div>
+</section>-->
+
+ 
+  <h2 style="color:black; font-family:Playfair Display; font-size: 40px;";>Book Your shipment here</h2>
+ <form action="booking.php" class="booking-form" method="POST">
+    
+        <div class="row">
+        <input name="name" type="text" placeholder="Full Name" required>
+        <input name="password" type="password" placeholder="Password" required>
+      </div>
+
+      <div class="row">
+        <input name="pickup" type="text" placeholder="Pickup Location" >
+        <input name="drop_location" type="text" placeholder="Drop Location" >
+      </div>
+
+      <div class="row">
+        <input type="tel"  name="phone" placeholder="Phone Number">
+        <input type="email" name="email" placeholder="Email Address">
+      </div>
+
+      <div class="row">
+        <input name="date" type="date">
+      </div>
+
+      <textarea name="message" placeholder="Shipment Details / Message"></textarea>
+
+      <button type="submit" name="submit">Book Now →</button>
+       </div>
+  </div>
+
