@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driver Signup - SwiftLogix</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+         
+        /* Overlay */
+        .overlay {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            width: 350px;
+            color: white;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #e65c00;
+        }
+    </style>
+</head>
+
+<body>
+<section class="DS">
+<div class="overlay">
+    <h2>Driver Registration</h2>
+
+    <form action="driver.php" method="POST">
+        
+        <input name="name" type="text" placeholder="Full Name" required>
+
+        <input name="phone" type="text" placeholder="Phone Number" required>
+
+        <!-- Vehicle Dropdown -->
+        <select name="vehicle" required>
+            <option value="">Select Vehicle Type</option>
+            <option value="mini-van" >mini-van (Medium Deliveries)</option>
+            <option value="Mini Truck">Mini Truck (Goods Transport)</option>
+            <option value="Truck">Truck (Heavy Load)</option>
+            <option value="Container">Container (Large Scale Transport)</option>
+        </select>
+
+        <button type="submit" name="submit">Register</button>
+
+    </form>
+</div>
+</section>
+</body>
+</html>
