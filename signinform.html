@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head><style>
+.booking2 {
+  padding: 40px;
+  width: 100%;
+  height:900px;
+  margin: auto;
+  height:700px;
+  color: #ee1212;
+  background-color: antiquewhite;
+  
+}
+.booking2 h2{
+    text-align: center;
+    font-family:Verdana,Geneva;
+}
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width:650px;
+  margin:auto;
+  padding:10px;
+  text-align: center;
+}
+.booking-form details{
+    width:2;
+    margin:auto;
+    height:200px;
+    width:200px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+   
+}
+
+.row input {
+  flex: 1;
+ 
+}
+
+.booking-form input,
+.booking-form textarea {
+  padding: 12px;
+  background-color: #e2e2f4;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color:black;
+  
+}
+
+.booking-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.booking-form button {
+  background: #ff6600;
+  color: white;
+  padding: 20px;
+   margin:20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: #e65c00;
+}
+</style>
+    </head>
+    <body>
+
+<section class="booking2">
+    <h2>New User Register Here </h2>
+    <form class="booking-form" action="signup.php" method="POST">
+    
+        <div class="row">
+        <input  type="text" name="username" placeholder="Full Name" required>
+        <input type="password" name="password" placeholder="Password" required>
+      </div>
+
+      <div class="row">
+        <input type="phone" name="phone" placeholder="Phone Number">
+        <input type="email" name="email" placeholder="Email Address">
+      </div>
+
+      <textarea type="text" name="address" placeholder="Address"></textarea>
+
+      <button type="submit" name="submit">Sign Up →</button>
+    </form>
+</section>
+    </body>
+</html>
