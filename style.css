@@ -510,47 +510,124 @@ ul li .btn:hover{
   color: #ff6600;
 }
 
-/* MOBILE */
 @media(max-width:768px){
 
-.footer-container{
-    grid-template-columns: 1fr 1fr;
-}
-
-    /* NAVBAR */
-ul{
-    display:none;
-    flex-direction:column;
-    position:absolute;
-    right:0;
-    top:60px;
-    width:100%;
-    background:#0D1B4C;
-    padding:20px 0;
-    text-align:center;
-}
-   
-  ul.show{
-    display:flex;
-}
-
-.menu-icon{
-    display:block;
-}
+/* HERO FIX 🔥 */
 .hero,
 .hero1,
 .hero2,
 .hero3{
-    height: 60vh;   
+    height:60vh;
+    padding:30px 15px;
 }
-  
-    .cards{
-        flex-direction:column;
-        align-items:center;
-    }
+
+/* TEXT SIZE */
+.hero h1,
+.hero1 h1,
+.hero2 h1,
+.hero3 h1{
+    font-size:24px;
+}
+
+/* NAVBAR */
+ul{
+    width:100%;
+    text-align:center;
+}
+
+/* SERVICES */
+.cards,
+.card{
+    flex-direction:column;
+    align-items:center;
+}
+
+.service-box{
+    width:90%;
+}
+
+/* BOOKING */
+.row{
+    flex-direction:column;
+}
+
+.booking-form{
+    margin-left:0;
+    width:100%;
+}
+
+/* VEHICLE SECTION 🔥 */
+.transport{
+    height:auto;
+    padding:40px 20px;
+}
+
+.transport-grid{
+    grid-template-columns:1fr;
+}
+
+.item{
+    margin-left:0;
+}
+
+/* CITIES FIX 🔥 (MAIN PROBLEM) */
+.Cities{
+    height:auto;
+    padding:40px 20px;
+    margin-bottom:40px;
+}
+
+.cards1,
+.cards2{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    margin:0;
+    height:auto;
+}
+
+.cities-box{
+    width:90%;
+    height:auto;
+}
+
+/* CONTACT */
+.info1{
+    flex-direction:column;
+    gap:20px;
+}
+
+.row1{
+    flex-direction:column;
+}
+
+/* FOOTER */
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    align-items:center;
+}
+
+/* DRIVER */
+.driver-content h1{
+    font-size:26px;
+}
+
+.driver-content p{
+    font-size:14px;
+}
+
+}
+
+}
 
 
-}
+
+
+
 /* vehicles */
 body{
     font-family: Arial;
