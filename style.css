@@ -510,8 +510,16 @@ ul li .btn:hover{
   color: #ff6600;
 }
 
-@media(max-width:768px){
+@media(max-width:575px){
 
+    /* HERO FIX 🔥 */
+.hero,
+.hero1,
+.hero2,
+.hero3{
+    height:60vh;
+    padding:30px 15px;
+}
 .footer-container{ grid-template-columns: 1fr 1fr; } 
     ul{ display:none; 
        flex-direction:column; 
