@@ -512,27 +512,32 @@ ul li .btn:hover{
 
 /* MOBILE */
 @media(max-width:768px){
+
 .footer-container{
     grid-template-columns: 1fr 1fr;
 }
 
-    ul{
-        display:none;
-        flex-direction:column;
-        position:absolute;
-        right:0;
-        top:60px;
-        background:#0D1B4C;
-        padding:20px;
-    }
+    /* NAVBAR */
+ul{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    right:0;
+    top:60px;
+    width:100%;
+    background:#0D1B4C;
+    padding:20px 0;
+    text-align:center;
+}
+   
 
-    ul.show{
-        display:flex;
-    }
+  ul.show{
+    display:flex;
+}
 
-    .menu-icon{
-        display:block;
-    }
+.menu-icon{
+    display:block;
+}
 
     .cards{
         flex-direction:column;
