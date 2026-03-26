@@ -530,7 +530,6 @@ ul{
     text-align:center;
 }
    
-
   ul.show{
     display:flex;
 }
@@ -538,11 +537,19 @@ ul{
 .menu-icon{
     display:block;
 }
-
+.hero,
+.hero1,
+.hero2,
+.hero3{
+    height: 60vh;   
+}
+  
     .cards{
         flex-direction:column;
         align-items:center;
     }
+
+
 }
 /* vehicles */
 body{
